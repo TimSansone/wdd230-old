@@ -146,6 +146,7 @@ footer, .social, img {
 
 .card-img {
     border: 10px solid black;
+    padding: 0;
 }
 
 main, section, img {
