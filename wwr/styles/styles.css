@@ -14,7 +14,7 @@ nav a {
     padding: 10px;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1, #hero-msg h4, #hero2-msg h1, #hero2-msg h4 {
     text-align: center;
 }
 
@@ -91,6 +91,15 @@ nav a:hover {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+.msg2 {
+    background-color: #80ed99;
+    font-size: 1.53em;
+    padding: 35px;
+    grid-column: 2/9;
+    grid-row: 11/12;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
 footer {
     background-color: #D4AC0D;
     text-decoration: none;
@@ -101,7 +110,7 @@ footer {
     align-items: center;
 }
 
-.home-title {
+.home-title, .adventures-title {
     color: #C7F9CC;
     font-family: 'Abril Fatface', 'Helvetica', sans-serif;
     font-size: 2em;
@@ -114,12 +123,12 @@ h4 {
     text-align: center;
 }
 
-.msg h2 {
+.msg h2 , .msg2 h2 {
     color: #22577A;
     font-family: 'Abril Fatface', 'Helvetica', sans-serif;
 }
 
-.msg p {
+.msg p, .msg2 p {
     color: #396e94;
     padding-bottom: 15px;
 }
@@ -142,7 +151,7 @@ footer a:hover {
     padding-top: 10px;
 }
 
-#hero-img {
+#hero-img, #hero2-img {
     width: 100%;
 }
 
@@ -185,6 +194,18 @@ nav {
     margin-top: -100px;
 }
 
+#hero2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero2-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
@@ -197,7 +218,13 @@ nav {
     margin-top: 100px;
 }
 
-#hero-msg h4 {
+#hero2-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 10px;
+}
+
+#hero-msg h4, #hero2-msg h4 {
     color: white;
 }
 
@@ -206,8 +233,45 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.card-img, .mountains {
+.home2-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-img, .mountains, .card2-img {
     width: 100%;    
+}
+
+.desolation-card {
+    padding: 35px auto;
+    margin-top: 10px;
+    grid-column: 2/9;
+    grid-row: 2/3;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.middle_fork-card {
+    padding: 35px auto;
+    margin-top: 100px;
+    grid-column: 2/9;
+    grid-row: 4/5;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.grand_canyon-card {
+    padding: 35px auto;
+    margin-top: 100px;
+    grid-column: 2/9;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.group_rafting {
+    width: 100%;
+    margin-top: 15px;
+    grid-column: 2/9;
+    grid-row: 8/9;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .rivers-card {
@@ -241,8 +305,9 @@ nav {
     transform: scale(1.1);
 }
 
+
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .home2-grid, #hero2 {
         display: block;
         height: auto;
     }
@@ -270,6 +335,7 @@ nav {
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
